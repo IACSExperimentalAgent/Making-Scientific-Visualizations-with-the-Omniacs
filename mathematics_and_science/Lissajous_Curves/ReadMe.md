@@ -2,6 +2,10 @@
 
 This project demonstrates the elegant geometry of **Lissajous Curves** — parametric figures traced by the intersection of two perpendicular harmonic oscillations. The animation is built with [Manim](https://www.manim.community/) and explores how varying the frequency ratios and phase offsets generates a rich family of curves.
 
+![Animation Preview](lissajous_preview.png)
+
+[Watch here!](https://youtu.be/PLACEHOLDER)
+
 ## 📐 What's a Lissajous Curve?
 
 A Lissajous Curve is a parametric curve described by:
@@ -10,11 +14,6 @@ A Lissajous Curve is a parametric curve described by:
 x(t) = A · sin(a·t + δ)
 y(t) = B · sin(b·t)
 ```
-
-Where:
-- `a` and `b` are the frequencies of the two oscillations
-- `δ` (delta) is the phase offset between them
-- Different ratios of `a:b` produce distinct, recognizable shapes
 
 They appear in:
 - Physics and signal processing (oscilloscope displays)
@@ -32,14 +31,14 @@ They appear in:
 
 ## 🎨 Visual Styling
 
-| Feature | Value |
-|---|---|
-| Frequency Ratios | 1:1, 1:2, 1:3, 2:3, 3:4, and more |
-| Phase Sweep | 0 to 2π animated continuously |
-| Colors | Cyan, Magenta, Yellow, Green, Red, Blue |
-| Stroke Width | 2 |
-| Background | Black |
-| Curve Animation | Drawn parametrically + phase-animated |
+| Feature            | Value                                      |
+|--------------------|--------------------------------------------|
+| Frequency Ratios   | 1:1, 1:2, 1:3, 2:3, 3:4, and more         |
+| Phase Sweep        | 0 to 2π animated continuously              |
+| Colors             | Cyan, Magenta, Yellow, Green, Red, Blue    |
+| Stroke Width       | 2                                          |
+| Background         | Black                                      |
+| Curve Animation    | Drawn parametrically + phase-animated      |
 
 ## 📦 Requirements
 
@@ -54,19 +53,20 @@ pip install manim numpy
 ## ▶️ Run the Animation
 
 ```bash
-manim -pql Lissajous_Curves.py LissajousCurves
+manim -pql lissajous_curves.py LissajousCurves
 ```
 
 Use `-qh` instead of `-pql` for high quality.
 
 ## 📁 Files
 
-- `Lissajous_Curves.py` — Manim animation script
-- `ReadMe.md` — Project documentation
+- `lissajous_curves.py` — Manim animation script
+- `README.md` — Project documentation
 
 ## 🎓 Educational Use
 
 Useful for:
+
 - Teaching parametric equations and harmonic motion
 - Demonstrating frequency and phase relationships
 - Exploring the intersection of math, physics, and art
